@@ -20,9 +20,14 @@ header {
     line-height: 70px;
 }
 
+nav {
+    float: right;   
+}
 
-
-
+nav ul li {
+    display: inline-block;
+    line-height: 70px;
+}
 
 
 
