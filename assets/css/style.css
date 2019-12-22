@@ -23,7 +23,6 @@ header {
 .container{
     width: 960px;   
     margin: auto;
-
 }
 
 .name{
@@ -71,6 +70,10 @@ section{
     margin: 30px auto;
     background-color: #ffffff;
     height: 81%;
+}
+
+p {
+    flex-wrap: wrap;
 }
 
 p, li {
