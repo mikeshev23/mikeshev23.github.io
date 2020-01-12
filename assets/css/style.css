@@ -128,6 +128,7 @@ footer div p {
 
     body{
         font-size: 1em; 
+        background-color: black;
     }
     .container{
         width: 400px;
