@@ -1,143 +1,57 @@
-*{
-    box-sizing: border-box;
-}
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
 
-body, html{
-    height: 99%;
-    width: 100%;
-}
-
-body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #d2d2d2;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='40' viewBox='0 0 50 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ececec' fill-opacity='0.4'%3E%3Cpath d='M40 10L36.67 0h-2.11l3.33 10H20l-2.28 6.84L12.11 0H10l6.67 20H10l-2.28 6.84L2.11 10 5.44 0h-2.1L0 10l6.67 20-3.34 10h2.11l2.28-6.84L10 40h20l2.28-6.84L34.56 40h2.1l-3.33-10H40l2.28-6.84L47.89 40H50l-6.67-20L50 0h-2.1l-5.62 16.84L40 10zm1.23 10l-2.28-6.84L34 28h4.56l2.67-8zm-10.67 8l-2-6h-9.12l2 6h9.12zm-12.84-4.84L12.77 38h15.79l2.67-8H20l-2.28-6.84zM18.77 20H30l2.28 6.84L37.23 12H21.44l-2.67 8zm-7.33 2H16l-4.95 14.84L8.77 30l2.67-8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    
-}
-
-header {
-    background-color: white;
-    height: 70px;
-    margin: 0px;
-}
-
-.container{
-    width: 960px;   
-    margin: auto;
-}
-
-.name{
-    float: left;
-    background-color: #4aaaa5;
-    line-height: 70px;
-    padding-right: 20px;
-    padding-left: 20px;
-    color: #ffffff;
-    
-}
-
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-  }
-
-nav {
-    float: right;   
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 70px;
-    padding: 5px;
-
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #777777;
-}
-
-section{
-    display: block;
-    padding: 5px;
-}
-
-#aboutcnt {
-    color: #4aaaa5;
-    padding: 30px 30px;
-    margin: 30px auto;
-    background-color: #ffffff;
-    height: 81%;
+nav ul a,
+nav .brand-logo {
+  color: #444;
 }
 
 p {
-    flex-wrap: wrap;
+  line-height: 2rem;
 }
 
-p, li {
-    line-height: 30px;
-    color: #777777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+.sidenav-trigger {
+  color: #26a69a;
 }
 
-img {
-    width: 200px;
-    height: auto;
-    float: left;
-    margin-right: 20px;
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
 }
-
-footer {
-    position: sticky;
-    background-color: #666666;
-    color: #cccccc;
+  .parallax-container .section {
     width: 100%;
-    text-align: center;
-    border-top: 8px solid #4aaaa5;
-    height: 70px;
-}
-
-footer div p {
-        line-height: 60px;
-        color: #cccccc;
-    }
-
-#msg {
-    width: 100%;
-    box-sizing: border-box;
-    height: 200px;
-}
-
-#form{
-    color: #777777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-
-  @media screen and (max-width: 1000px){
-    p{
-        .short-text { display: inline-block; }
-        .full-text { display: none; }
-         font-size: 2vw;
-         text-align: center !important;
-
-    }
-
-    body{
-        font-size: 1em; 
-        background-color: black;
-    }
-    .container{
-        width: 400px;
-    }
-    
-    header {
-        width: 100%;
-        margin: 0px;
-
-    }
   }
- 
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
